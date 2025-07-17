@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f3ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8b5cf6;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7c3aed;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Animation classes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Hover effects */
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+/* Custom purple theme utilities */
+.bg-primary {
+  background-color: #8b5cf6;
+}
+
+.bg-primary-dark {
+  background-color: #7c3aed;
+}
+
+.bg-primary-light {
+  background-color: #a78bfa;
+}
+
+.bg-primary-50 {
+  background-color: #f5f3ff;
+}
+
+.text-primary {
+  color: #8b5cf6;
+}
+
+.text-primary-dark {
+  color: #7c3aed;
+}
+
+.border-primary {
+  border-color: #8b5cf6;
+}
+
+.ring-primary {
+  --tw-ring-color: #8b5cf6;
+}
